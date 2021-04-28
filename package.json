@@ -8,8 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "chakra": "0.0.3",
     "next": "10.1.3",
+    "next-compose-plugins": "^2.2.1",
+    "next-images": "^1.7.0",
+    "next-optimized-images": "^2.6.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "styled-components": "^5.2.3",
+    "webpack": "^5.36.0"
   }
 }
