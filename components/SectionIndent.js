@@ -1,9 +1,16 @@
 import styled from 'styled-components'
-import homeBanner from "../public/images/homeBanner.png"
+import homeBanner from "../public/images/homeBanner.jpg"
 import { theme, mq } from '../constants/theme'
 
 const { colors } = theme
 
+
+export const BannerContainer = styled.div`
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 100%;
+ `;
 
 export const Section = styled.div`
 display: flex;
@@ -53,13 +60,16 @@ h3 {
     left: 0; */
     /* height: 782px; */
     /* height: 100%; */
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 `;
 
 export const HomeBannerImg = styled.img`
     height: 782px;
-    width: 100%;
+    /* width: 100%; */
     z-index: -1;
     position: absolute;
     top: 0;
