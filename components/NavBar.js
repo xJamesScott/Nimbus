@@ -11,6 +11,7 @@ const NavContainer = styled.div`
     align-items: center;
     margin-top: 5.8rem;
     color: ${colors.accent2};
+    width: 100%;
 
     * {
         color: ${colors.accent2};

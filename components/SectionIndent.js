@@ -18,15 +18,20 @@ justify-content: center;
 align-items: center;
 position: relative;
 
+&.features-section {
+    background-color: #FAFAFA;
+    
+    h3 {
+        margin: 6.3rem auto;
+    }
+}
+
 h1 {
     text-align: center;
     letter-spacing: .5rem;
     margin-top: 5.4rem;
 }
 
-h3 {
-    text
-}
 &.main-banner {
     height: 782px;
     flex-direction: column;
@@ -79,6 +84,63 @@ export const HomeBannerImg = styled.img`
 
 export const SectionIndent = styled.div`
     width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+  
+
+    &.banner-text {
+        flex-direction: column;
+    }
+
+    &.easy-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10rem;
+        gap: 12.5rem;
+        margin-bottom: 9.5rem;
+
+        &.easy-section > * {
+            width: 50%;
+        }
+        
+        &.easy-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h3 {
+
+        }
+        
+        p {
+            margin: 2.4rem 0;
+        }
+        img {
+            width: 311px;
+            
+        }
+
+        .easy-text a {
+            color: ${colors.main};
+        }
+    }
+`;
+
+export const SectionContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+`;
+
+export const SectionTitle = styled.div`
+    text-align: center;
+    
 `;
 
 
