@@ -11,13 +11,9 @@ import { CardContainer, CardWrapper, Card, CardText } from '../components/Cards'
 export default function Home() {
   return (
     <>
-
-
       <Section
         className="main-banner">
-        <SectionIndent
-
-        >
+        <SectionIndent>
           <NavBar />
         </SectionIndent>
         <HomeBannerImg
@@ -34,6 +30,7 @@ export default function Home() {
           </SectionIndent>
         </BannerContainer>
       </Section>
+      
       <Section>
         <SectionIndent
           className="easy-section"
@@ -54,7 +51,7 @@ export default function Home() {
           </SectionTitle>
           <SectionIndent>
             <CardContainer
-            className="features"
+              className="features"
             >
               <CardWrapper>
                 <Card>
@@ -66,6 +63,7 @@ export default function Home() {
                   </CardText>
                 </Card>
               </CardWrapper>
+
               <CardWrapper>
                 <Card>
                   <img src={currency} alt="" />
@@ -76,6 +74,7 @@ export default function Home() {
                   </CardText>
                 </Card>
               </CardWrapper>
+
               <CardWrapper>
                 <Card>
                   <img src={currency} alt="" />
@@ -86,10 +85,9 @@ export default function Home() {
                   </CardText>
                 </Card>
               </CardWrapper>
-              
+
             </CardContainer>
           </SectionIndent>
-          
         </SectionContainer>
       </Section>
     </>
