@@ -33,15 +33,16 @@ const LoginContainer = styled.div`
 const LanguageContainer = styled.div`
 `;
 
-const LoginButton = styled.div`
+const LoginButton = styled.button`
     background-color: transparent;
-    border: solid .1rem ${colors.accent2};
+    border: solid .2rem ${colors.accent2};
     border-radius: .5rem;
-    width: 10rem;
+    width: 17rem;
     height: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 `
 
 const NavBar = () => {
@@ -58,7 +59,7 @@ const NavBar = () => {
                 <a href="">SIGNUP</a>
             </NavLinks>
             <LoginContainer>
-                <LoginButton>LOGIN</LoginButton>
+                <LoginButton>GET STARTED</LoginButton>
             </LoginContainer>
         </NavContainer>
     )
