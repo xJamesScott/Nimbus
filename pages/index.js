@@ -5,7 +5,7 @@ import NavBar from '../components/NavBar'
 import homeBanner from "../public/images/homeBanner.jpg"
 import MainCTA from '../components/MainCTA'
 import easyImg from '../public/images/easy.jpg'
-import currency from '../public/images/currency.jpg'
+import currency from '../public/images/currency.png'
 import { CardContainer, CardWrapper, Card, CardText } from '../components/Cards'
 
 export default function Home() {
@@ -89,8 +89,7 @@ export default function Home() {
               
             </CardContainer>
           </SectionIndent>
-          <div>yoo</div>
-          <div>yoo</div>
+          
         </SectionContainer>
       </Section>
     </>
