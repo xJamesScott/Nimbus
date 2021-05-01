@@ -6,10 +6,6 @@ body {
   margin: 0;
   font-family: Lato, sans-serif;
   font-size: 10px;
-  /* display: flex; */
-  /* flex-direction: column;
-  align-items: center;
-  justify-content: center; */
 }
 
 :root {
@@ -48,7 +44,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center; 
-  /* align-items: center; */
   transition: all .3s ease;
   position: relative;
 }
@@ -88,7 +83,7 @@ a:hover::after, a:hover::before{
 
 p {
   font-size: 1.5rem;
-  line-height:2rem;
+  line-height:2.5rem;
   
 }
 

@@ -12,6 +12,7 @@ const NavContainer = styled.div`
     margin-top: 5.8rem;
     color: ${colors.accent2};
     width: 100%;
+    text-align: center;
 
     * {
         color: ${colors.accent2};
@@ -23,7 +24,9 @@ const NavLogo = styled.div`
 
 const NavLinks = styled.div`
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
+    /* width: 100%; */
+    justify-self: flex-end;
     color: ${colors.accent2};
 `;
 
@@ -42,6 +45,9 @@ const LoginButton = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.22);
+
+
     
 `
 
@@ -56,7 +62,7 @@ const NavBar = () => {
                 <a href="">FEATURES</a>
                 <a href="">TECHNOLOGY</a>
                 <a href="">CONTACT</a>
-                <a href="">SIGNUP</a>
+                {/* <a href="">SIGNUP</a> */}
             </NavLinks>
             <LoginContainer>
                 <LoginButton>GET STARTED</LoginButton>

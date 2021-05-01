@@ -10,6 +10,7 @@ export const BannerContainer = styled.div`
  align-items: center;
  justify-content: center;
  height: 100%;
+ width: 100%;
  `;
 
 export const Section = styled.div`
@@ -70,16 +71,25 @@ h1 {
     height: 100%;
 }
 
+&.technology {
+    h2 {
+        margin-top: 6.3rem;
+    }    
+}
+
+&.focus {
+    background-color: ${colors.accent3};
+    color: ${colors.accent2};
+}
+
 `;
 
 export const HomeBannerImg = styled.img`
     height: 782px;
-    /* width: 100%; */
     z-index: -1;
     position: absolute;
     top: 0;
     left: 0;
-    /* height: 782px; */
 `;
 
 export const SectionIndent = styled.div`
@@ -87,9 +97,6 @@ export const SectionIndent = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    
-
-  
 
     &.banner-text {
         flex-direction: column;
@@ -128,6 +135,53 @@ export const SectionIndent = styled.div`
             color: ${colors.main};
         }
     }
+
+    &.focus {
+        height: 500px;
+        gap: 8.1rem;
+        
+        > * {
+            width: 50%;
+        }
+
+        img {
+         width: 533px;
+        }
+
+        .focus-icons {
+            display: flex;
+            gap: 2.3rem;
+            
+            img {
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+    
+    .focus-text {
+
+    }
+&.contact {
+    /* height: 545px; */
+    gap: 20%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0;
+    margin-top: 11.7rem;
+    * {
+        margin: 0;
+    }
+    > * {
+        width: 50%;
+    }
+
+    p {
+      margin-top: 8rem;  
+    }
+
+}
+
 `;
 
 export const SectionContainer = styled.div`
@@ -136,6 +190,11 @@ export const SectionContainer = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
+    /* height: 545px; */
+    
+    &.contact {
+
+    }
 `;
 
 export const SectionTitle = styled.div`
