@@ -20,7 +20,7 @@ align-items: center;
 position: relative;
 
 &.features-section {
-    background-color: #FAFAFA;
+    background-color: ${colors.accent4};
     
     h3 {
         margin: 6.3rem auto;
@@ -164,11 +164,19 @@ export const SectionIndent = styled.div`
     }
 &.contact {
     /* height: 545px; */
+    display: flex;
+    align-items: center;
+    margin: 0;
+    /* margin-top: 11.7rem; */
+    height: 525px;
+    
+
+    .contact-content {
+    display: flex;
     gap: 20%;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 0;
-    margin-top: 11.7rem;
+   
     * {
         margin: 0;
     }
@@ -180,7 +188,16 @@ export const SectionIndent = styled.div`
       margin-top: 8rem;  
     }
 
+    h2 {
+        margin-top: 0;
+        line-height: normal;
+        
+    }
+    }
+
 }
+
+
 
 `;
 

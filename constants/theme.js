@@ -3,7 +3,8 @@ import {
     MAIN_TEXT,
     ACCENT1,
     ACCENT2,
-    ACCENT3
+    ACCENT3,
+    ACCENT4
 }
     from "./colors";
 
@@ -14,6 +15,7 @@ const theme = {
         accent1: ACCENT1,
         accent2: ACCENT2,
         accent3: ACCENT3,
+        accent4: ACCENT4,
     }
 }
 

@@ -46,6 +46,7 @@ const LoginButton = styled.button`
     align-items: center;
     justify-content: center;
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.22);
+    text-shadow: 0px 0px 12px rgba(0,0,0,0.5);
 
 
     
@@ -58,11 +59,10 @@ const NavBar = () => {
                 <img src={Logo} alt="" />
             </NavLogo>
             <NavLinks>
-                <a href="">OVERVIEW</a>
-                <a href="">FEATURES</a>
-                <a href="">TECHNOLOGY</a>
-                <a href="">CONTACT</a>
-                {/* <a href="">SIGNUP</a> */}
+                <a href="#overview">OVERVIEW</a>
+                <a href="#features">FEATURES</a>
+                <a href="#technology">TECHNOLOGY</a>
+                <a href="#contact">CONTACT</a>
             </NavLinks>
             <LoginContainer>
                 <LoginButton>GET STARTED</LoginButton>

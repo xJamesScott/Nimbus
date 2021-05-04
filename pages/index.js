@@ -18,6 +18,7 @@ import windows from '../public/icons/windows.svg'
 import stayFocused from '../public/images/stay-focused.png'
 import { CardContainer, CardWrapper, Card, CardText, CardTextTech, GiantText } from '../components/Cards'
 import { ContactForm } from '../components/ContactForm'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -44,6 +45,7 @@ export default function Home() {
 
       <Section>
         <SectionIndent
+          id="overview"
           className="easy-section"
         >
           <div className="easy-text">
@@ -55,7 +57,9 @@ export default function Home() {
         </SectionIndent>
       </Section>
 
-      <Section className="features-section">
+      <Section 
+      id="features"
+      className="features-section">
         <SectionContainer>
           <SectionTitle>
             <h2>Features</h2>
@@ -102,7 +106,9 @@ export default function Home() {
         </SectionContainer>
       </Section>
 
-      <Section className="technology">
+      <Section 
+      id="technology"
+      className="technology">
         <SectionContainer>
           <SectionTitle>
             <h2>Technology</h2>
@@ -180,39 +186,43 @@ export default function Home() {
 
       <Section>
         <SectionContainer
+          id="contact"
           className="contact"
         >
           <SectionIndent
-          className="contact"
+            className="contact"
           >
-          <div>
-          <h2>Contact</h2>
-          <p>Questions or concerns? Just fill out the form below and our support team will get back to you within 24 hours</p>
-        </div>
-        <ContactForm>
-          <input
-            className="half"
-            type="text"
-            placeholder="First Name" />
-          <input
-            className="half"
-            type="text"
-            placeholder="Last Name" />
-          <input
-            className="full"
-            type="text"
-            placeholder="Phone Number" />
-          <input
-            className="full"
-            type="text"
-            placeholder="Phone Number" />
+            <div className="contact-content">
+              <div>
+                <h2>Contact</h2>
+                <p>Questions or concerns? Just fill out the form below and our support team will get back to you within 24 hours</p>
+              </div>
+              <ContactForm>
+                <input
+                  className="half"
+                  type="text"
+                  placeholder="First Name" />
+                <input
+                  className="half"
+                  type="text"
+                  placeholder="Last Name" />
+                <input
+                  className="full"
+                  type="text"
+                  placeholder="Phone Number" />
+                <input
+                  className="full"
+                  type="text"
+                  placeholder="Phone Number" />
+                <input id="form-button" type="submit" value="SUBMIT" />
+              </ContactForm>
+            </div>
 
-          <input id="form-button" type="submit" value="SUBMIT" />
-        </ContactForm>
-            
           </SectionIndent>
-    </SectionContainer>
+        </SectionContainer>
       </Section >
+
+      <Footer />
 
     </>
   )
