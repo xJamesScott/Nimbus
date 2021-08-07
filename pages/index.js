@@ -22,7 +22,8 @@ import Footer from '../components/Footer'
 
 export default function Home() {
   return (
-    <>
+    <div>
+      
       <Section
         className="main-banner">
         <SectionIndent>
@@ -57,9 +58,9 @@ export default function Home() {
         </SectionIndent>
       </Section>
 
-      <Section 
-      id="features"
-      className="features-section">
+      <Section
+        id="features"
+        className="features-section">
         <SectionContainer>
           <SectionTitle>
             <h2>Features</h2>
@@ -106,9 +107,9 @@ export default function Home() {
         </SectionContainer>
       </Section>
 
-      <Section 
-      id="technology"
-      className="technology">
+      <Section
+        id="technology"
+        className="technology">
         <SectionContainer>
           <SectionTitle>
             <h2>Technology</h2>
@@ -224,6 +225,6 @@ export default function Home() {
 
       <Footer />
 
-    </>
+    </div>
   )
 }
