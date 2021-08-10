@@ -42,6 +42,14 @@ a {
   text-decoration: none;
 }
 
+.disabled {
+  cursor: auto;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
 .link {
   color: inherit;
   text-decoration: none;

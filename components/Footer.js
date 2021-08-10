@@ -85,29 +85,29 @@ const Footer = () => {
                         <TextBox>
                             <h3>Contact</h3>
                             <p>Pipang Ltd, Griva Digeni,
-                            81-83 Jacovides Tower, 1st Floor
-                            1090 Picosia USA</p>
+                                81-83 Jacovides Tower, 1st Floor
+                                1090 Picosia USA</p>
                         </TextBox>
 
                         <TextBox>
                             <h3>Services</h3>
-                            <a href="">Overview</a>
-                            <a href="">Features</a>
-                            <a href="">Technology</a>
-                            <a href="">Terms & Conditions</a>
-                            <a href="">Privecy</a>
+                            <a href="/#overview">Overview</a>
+                            <a href="/#features">Features</a>
+                            <a href="/#technology">Technology</a>
+                            <a className="disabled" href="">Terms & Conditions</a>
+                            <a className="disabled" href="">Privacy</a>
 
                         </TextBox>
 
                         <TextBox>
                             <h3>Contact</h3>
                             <div className="text-box-content">
-                                <p>info@cloudbudget.com</p>
+                                <p>info@nimbus.com</p>
                                 <p>+1 844-721-7120 </p>
                                 <div className="social-icons">
-                                    <img src={facebook} />
-                                    <img src={linkedin} />
-                                    <img src={twitter} />
+                                    <a href="https://facebook.com"><img src={facebook} /></a>
+                                    <a href="https://linkedin.com"><img src={linkedin} /></a>
+                                    <a href="https://twitter.com"><img src={twitter} /></a>
                                 </div>
                             </div>
                         </TextBox>

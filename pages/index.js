@@ -52,7 +52,7 @@ export default function Home() {
           <div className="easy-text">
             <h2>Easy to Use Cloud Budget Management Software</h2>
             <p>Our software is made so you can access and manage your budget and expenses online at any time from any device. It provides detailed income and expense reports with graphs so you can easilly see your spending patterns and budget at a glance. Read below to find out more.</p>
-            <a href="">Learn More</a>
+            <a href="/#contact">Learn More</a>
           </div>
           <div
             className="img-wrap"
@@ -79,7 +79,7 @@ export default function Home() {
                   <CardText>
                     <h4>Supports All Currencies and Cards</h4>
                     <p>We support all popular currencies and is fully customizable to add</p>
-                    <a href="">Read More</a>
+                    <a href="/#contact">Learn More</a>
                   </CardText>
                 </Card>
               </CardWrapper>
@@ -90,7 +90,7 @@ export default function Home() {
                   <CardText>
                     <h4>Manage your expenses on the go</h4>
                     <p>You can access your account from anywhere in the world on any device</p>
-                    <a href="">Read More</a>
+                    <a href="/#contact">Learn More</a>
                   </CardText>
                 </Card>
               </CardWrapper>
@@ -101,7 +101,7 @@ export default function Home() {
                   <CardText>
                     <h4>Cloud Budget Management Software</h4>
                     <p>Our software is made so you can access and manage your budget</p>
-                    <a href="">Read More</a>
+                    <a href="/#contact">Learn More</a>
                   </CardText>
                 </Card>
               </CardWrapper>
