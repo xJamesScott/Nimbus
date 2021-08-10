@@ -39,7 +39,7 @@ const mq = {
             minWidth: "768px",
             maxWidth: "1023px",
             min: "(min-width: 768px)",
-            max: "(max-width:1023px)",
+            max: "(max-width:1150px)",
         },
         wide: {
             minWidth: "1024px",

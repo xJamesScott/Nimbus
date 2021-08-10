@@ -18,7 +18,9 @@ const MainCTA = () => {
     return (
         <>
             <Container>
-                <CTAButton>SIGN UP</CTAButton>
+                <a href="/#contact">
+                    <CTAButton>SIGN UP</CTAButton>
+                </a>
             </Container>
         </>
     )

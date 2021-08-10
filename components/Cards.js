@@ -10,6 +10,7 @@ export const CardContainer = styled.div`
     width: 100%;
     flex-wrap: wrap;
     gap: 3rem;
+    overflow: hidden;
     &.features {
         margin-top: 6.5rem;
     }
@@ -17,18 +18,20 @@ export const CardContainer = styled.div`
 
 export const CardWrapper = styled.div`
     display: flex;
+    flex-wrap: wrap;
     flex-basis: 350px;
     justify-content: center;
     align-items: center;
     margin: auto;
-    flex-grow: 2;
+    flex-grow: 1;
+    flex-shrink: 200px !important;
 
     &.technology {
         align-items: flex-start;
         gap: 1.9rem;
         
         > * {
-        padding: 3.4rem;
+        padding: 1.4rem;
     }
     }
 

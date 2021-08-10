@@ -13,7 +13,8 @@ const FooterContainer = styled.div`
     justify-content:center;
     align-items: center;
     background-color: ${colors.accent4};
-    height: 435px;
+    overflow: hidden;
+    /* height: 435px; */
 `;
 
 
@@ -25,6 +26,7 @@ const FooterContent = styled.div`
     gap: 2.5rem;
     flex-wrap: wrap;
     margin-bottom: 8rem;
+    margin: 4rem auto;
     
     
 
@@ -34,7 +36,8 @@ const FooterIndent = styled(SectionIndent)`
     
     
     &.footer {
-    flex-direction: column;
+        
+        flex-direction: column;
     #copyright {
         align-self: flex-start;
         color: #7f7f7f;

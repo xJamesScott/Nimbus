@@ -7,6 +7,7 @@ body {
   font-family: Lato, sans-serif;
   font-size: 10px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 :root {
@@ -38,6 +39,10 @@ h4 {
 }
 
 a {
+  text-decoration: none;
+}
+
+.link {
   color: inherit;
   text-decoration: none;
   font-size: 1.5rem;
@@ -49,7 +54,7 @@ a {
   position: relative;
 }
 
-a:after {
+.link:after {
   content: '';
   position: absolute;
   transition: opacity .35s ease;
@@ -62,7 +67,7 @@ a:after {
   transform: scaleX(0);
 }
 
-a:before {
+.link:before {
   content: '';
   position: absolute;
   transition: opacity .35s ease;
@@ -77,9 +82,10 @@ a:before {
 }
 
 
-a:hover::after, a:hover::before{
+.link:hover::after, .link:hover::before{
   transform: scaleX(1);
   opacity: 1;
+  
 }
 
 p {
@@ -94,6 +100,7 @@ button {
   font-size: 1.6rem;
   letter-spacing: .2rem;
   font-weight: bold;
+  cursor: pointer;
 }
 
 * {

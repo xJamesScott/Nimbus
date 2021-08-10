@@ -23,7 +23,7 @@ import Footer from '../components/Footer'
 export default function Home() {
   return (
     <div>
-      
+
       <Section
         className="main-banner">
         <SectionIndent>
@@ -37,7 +37,7 @@ export default function Home() {
           <SectionIndent
             className="banner-text"
           >
-            <h1>MAKE BUDGETS <br /> A BREEZE</h1>
+            <h1 className="main-title">MAKE BUDGETS <br /> A BREEZE</h1>
             <h3>Cloud budget management for everyone. Free 30 Day Trial, cancel anytime. No strings.</h3>
             <MainCTA />
           </SectionIndent>
@@ -54,7 +54,11 @@ export default function Home() {
             <p>Our software is made so you can access and manage your budget and expenses online at any time from any device. It provides detailed income and expense reports with graphs so you can easilly see your spending patterns and budget at a glance. Read below to find out more.</p>
             <a href="">Learn More</a>
           </div>
-          <img src={easyImg} alt="easy" />
+          <div
+            className="img-wrap"
+          >
+            <img src={easyImg} alt="easy" />
+          </div>
         </SectionIndent>
       </Section>
 

@@ -1,9 +1,8 @@
 import styled from 'styled-components'
 import homeBanner from "../public/images/homeBanner.jpg"
-import { theme, mq } from '../constants/theme'
+import { theme, mq } from '../constants/theme';
 
 const { colors } = theme
-
 
 export const BannerContainer = styled.div`
  display: flex;
@@ -57,7 +56,7 @@ h1 {
     background: linear-gradient(90deg, rgba(213,32,71,1) 0%, rgba(237,76,92,1) 100%);
     position: absolute;
     /* opacity: 80%; */
-    z-index: 0; */
+    z-index: 0;
 }
 
 .main-banner-img {
@@ -80,6 +79,7 @@ h1 {
 &.focus {
     background-color: ${colors.accent3};
     color: ${colors.accent2};
+    flex-wrap: wrap;
 }
 
 `;
@@ -100,7 +100,7 @@ export const SectionIndent = styled.div`
 
     &.banner-text {
         flex-direction: column;
-    }
+     }
 
     &.easy-section {
         display: flex;
@@ -111,7 +111,8 @@ export const SectionIndent = styled.div`
         margin-bottom: 9.5rem;
 
         &.easy-section > * {
-            width: 50%;
+            /* width: 50%; */
+            /* overflow: hidden; */
         }
         
         &.easy-text {
@@ -127,7 +128,14 @@ export const SectionIndent = styled.div`
             margin: 2.4rem 0;
         }
         img {
-            width: 311px;
+            width: 445px;
+            object-fit: cover;
+            height: 311px;
+            /* overflow: hidden; */
+            border-radius: 1rem;
+            object-fit: fill;
+            /* width: 100%; */
+            margin: auto;
             
         }
 
@@ -136,12 +144,40 @@ export const SectionIndent = styled.div`
         }
     }
 
+    &.easy-section {
+        overflow: hidden;
+        gap: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+        * {
+            width: 100%;
+            flex: 1 1 40% ;
+            /* margin: auto; */
+            
+        }
+
+        .img-wrap {
+            display: flex;
+            justify-content: center;
+            border-radius: 1rem;
+            overflow: hidden;
+            > * {
+                flex: 0 0 auto;
+            }
+        }
+    }
+
     &.focus {
-        height: 500px;
+        /* height: 500px; */
+        margin: 5rem auto;
         gap: 8.1rem;
+        flex-wrap: wrap;
         
         > * {
-            width: 50%;
+            /* width: 50%; */
+            flex: 0 1 30%;
         }
 
         img {
@@ -160,42 +196,49 @@ export const SectionIndent = styled.div`
     }
     
     .focus-text {
-
+        flex-grow: 1;
     }
-&.contact {
+
+    &.contact {
     /* height: 545px; */
     display: flex;
     align-items: center;
     margin: 0;
-    /* margin-top: 11.7rem; */
-    height: 525px;
     
+    }
 
     .contact-content {
-    display: flex;
-    gap: 20%;
-    justify-content: flex-start;
-    align-items: flex-start;
-   
-    * {
-        margin: 0;
-    }
-    > * {
-        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 6rem auto;
+    
+        * {
+            margin: auto;
+        }
+        > * {
+        }
+
+        p {
+        margin-top: 8rem;  
+        }
+
+        h2 {
+            margin-top: 0;
+            line-height: normal;
+            
+        }
+
+        #form-button {
+            margin: 0 
+        }
     }
 
-    p {
-      margin-top: 8rem;  
+    @media ${mq.phone.wide.max} {
+        width: 95%;
     }
-
-    h2 {
-        margin-top: 0;
-        line-height: normal;
-        
-    }
-    }
-
-}
 
 
 
